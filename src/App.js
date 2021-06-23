@@ -5,19 +5,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit 222 <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2>Details:</h2>
+        <Person name="munna" job="football" ></Person>
+        <Person name="David" job="Watching" ></Person>
+
       </header>
+    </div>
+  );
+}
+function Person(props) {
+  return (
+    <div style = {{border:'1px solid red',width:'400px',margin:'20px',backgroundColor:'lightcyan',color:'black'}}>
+      <h3>Name:{props.name}</h3>
+      <p>Job:{props.job}</p>
     </div>
   );
 }
